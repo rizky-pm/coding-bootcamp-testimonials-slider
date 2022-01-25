@@ -10,6 +10,7 @@ This is a solution to the [Coding bootcamp testimonials slider challenge on Fron
     -   [Links](#links)
 -   [My process](#my-process)
     -   [Built with](#built-with)
+    -   [Useful resources](#useful-resources)
 -   [Author](#author)
 
 ## Overview
@@ -41,7 +42,13 @@ Users should be able to:
 -   CSS Grid
 -   Mobile-first workflow
 
+### Useful resources
+
+-   [Solved - Images not displaying in GitHub Pages?](https://www.elharony.com/images-not-displaying-in-github-pages/)
+
 ## Author
 
 -   Frontend Mentor - [@rizky-pm](https://www.frontendmentor.io/profile/rizky-pm)
 -   Github - [@rizky-pm](https://github.com/rizky-pm)
+
+https://www.elharony.com/images-not-displaying-in-github-pages/
