@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Github](https://your-solution-url.com)
--   Live Site URL: [Github Pages](https://your-live-site-url.com)
+-   Solution URL: [Github](https://github.com/rizky-pm/coding-bootcamp-testimonials-slider)
+-   Live Site URL: [Github Pages](https://rizky-pm.github.io/coding-bootcamp-testimonials-slider/)
 
 ## My process
 
