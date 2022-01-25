@@ -1,0 +1,436 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5625rem;
+  background: url(../../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: left bottom;
+  min-height: 100vh;
+}
+
+.profile-picture-container {
+  width: 20.3125rem;
+  height: 19.0625rem;
+  background: url(../../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.profile-picture-container .profile-picture {
+  width: 15.9375rem;
+  height: 15.9375rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0rem 3.0469rem 6.0938rem -1.2188rem, rgba(0, 0, 0, 0.3) 0rem 1.8281rem 3.6563rem -1.8281rem;
+          box-shadow: rgba(50, 50, 93, 0.25) 0rem 3.0469rem 6.0938rem -1.2188rem, rgba(0, 0, 0, 0.3) 0rem 1.8281rem 3.6563rem -1.8281rem;
+}
+
+.profile-picture-container .button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -15%);
+          transform: translate(-50%, -15%);
+  width: 5rem;
+  height: 2.5rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.5625rem;
+  overflow: hidden;
+}
+
+.profile-picture-container .button__prev {
+  height: 100%;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.profile-picture-container .button__prev:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+.profile-picture-container .button__next {
+  height: 100%;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.profile-picture-container .button__next:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+.profile-picture-container .button .arrow {
+  width: 0.625rem;
+  height: 0.9375rem;
+}
+
+.text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #202046;
+  height: 12.5rem;
+  padding: 1.875rem 0.3125rem;
+  margin-top: 1.875rem;
+}
+
+.text__bg {
+  position: absolute;
+  top: 0;
+  width: 3.75rem;
+  height: 3.125rem;
+}
+
+.text__review {
+  font-weight: 300;
+  line-height: 1.25;
+  font-size: 1.125rem;
+}
+
+.text__name {
+  font-weight: 700;
+  margin-top: 1.875rem;
+  font-size: 1rem;
+}
+
+.text__job {
+  color: #babacf;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 62rem) {
+  #content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 2.8125rem;
+    background-size: 40%;
+  }
+  .profile-picture-container {
+    width: 37.5rem;
+    height: 35.625rem;
+    position: absolute;
+    right: 4.6875rem;
+  }
+  .profile-picture-container .profile-picture {
+    width: 80%;
+    height: 83%;
+  }
+  .profile-picture-container .button {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    width: 5.625rem;
+    height: 2.8125rem;
+    border-radius: 1.875rem;
+  }
+  .profile-picture-container .button__prev {
+    height: 100%;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 3.125rem;
+  }
+  .profile-picture-container .button__prev:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.15);
+  }
+  .profile-picture-container .button__next {
+    height: 100%;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 3.125rem;
+  }
+  .profile-picture-container .button__next:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.15);
+  }
+  .text {
+    position: absolute;
+    left: 10.625rem;
+    padding: 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.45fr 1.55fr;
+        grid-template-columns: 0.45fr 1.55fr;
+    -ms-grid-rows: 1.9fr 0.1fr;
+        grid-template-rows: 1.9fr 0.1fr;
+    gap: 3.4375rem 0.3125rem;
+        grid-template-areas: 'review review' 'name job';
+    text-align: left;
+    max-width: 39.375rem;
+    margin-top: 0;
+  }
+  .text__bg {
+    top: -37.5%;
+    left: 15%;
+    width: 7.5rem;
+    height: 6.875rem;
+  }
+  .text__review {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: review;
+    font-size: 2rem;
+  }
+  .text__name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: name;
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .text__job {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: job;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  #content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 2.8125rem;
+    background-size: 40%;
+  }
+  .profile-picture-container {
+    width: 43.125rem;
+    height: 41.25rem;
+    position: absolute;
+    right: 4.6875rem;
+  }
+  .profile-picture-container .profile-picture {
+    width: 80%;
+    height: 83%;
+  }
+  .profile-picture-container .button {
+    position: absolute;
+    bottom: 4%;
+    left: 20%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    width: 6.875rem;
+    height: 3.4375rem;
+    border-radius: 1.875rem;
+  }
+  .profile-picture-container .button__prev {
+    height: 100%;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 3.4375rem;
+  }
+  .profile-picture-container .button__prev:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.15);
+  }
+  .profile-picture-container .button__next {
+    height: 100%;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 3.4375rem;
+  }
+  .profile-picture-container .button__next:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.15);
+  }
+  .profile-picture-container .button .arrow {
+    width: 0.9375rem;
+    height: 1.25rem;
+  }
+  .text {
+    position: absolute;
+    left: 10.625rem;
+    padding: 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.45fr 1.55fr;
+        grid-template-columns: 0.45fr 1.55fr;
+    -ms-grid-rows: 1.9fr 0.1fr;
+        grid-template-rows: 1.9fr 0.1fr;
+    gap: 3.4375rem 0.3125rem;
+        grid-template-areas: 'review review' 'name job';
+    text-align: left;
+    margin-top: 0;
+  }
+  .text__bg {
+    top: -32.5%;
+    left: 15%;
+    width: 7.5rem;
+    height: 6.875rem;
+  }
+  .text__review {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: review;
+  }
+  .text__name {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: name;
+  }
+  .text__job {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: job;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2.5%;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0 4.375rem;
+}
+
+.attribution a {
+  color: inherit;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.attribution a:hover {
+  color: #202046;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 62rem) {
+  .attribution {
+    text-align: center;
+    padding: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 90rem) {
+  .attribution {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

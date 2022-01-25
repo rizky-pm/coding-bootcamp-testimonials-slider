@@ -1,0 +1,264 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5625rem;
+
+    background: url(../../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: left bottom;
+    min-height: 100vh;
+}
+
+.profile-picture-container {
+    width: 20.3125rem;
+    height: 19.0625rem;
+    background: url(../../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .profile-picture {
+        width: 15.9375rem;
+        height: 15.9375rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0rem 3.0469rem 6.0938rem -1.2188rem,
+            rgba(0, 0, 0, 0.3) 0rem 1.8281rem 3.6563rem -1.8281rem;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        width: 5rem;
+        height: 2.5rem;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5625rem;
+        overflow: hidden;
+
+        &__prev {
+            @include prev-next-button;
+            transition: all 0.25s ease;
+        }
+
+        &__next {
+            @include prev-next-button;
+            transition: all 0.25s ease;
+        }
+
+        .arrow {
+            width: 0.625rem;
+            height: 0.9375rem;
+        }
+    }
+}
+
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $colorDarkBlue;
+    height: 12.5rem;
+    padding: 1.875rem 0.3125rem;
+    margin-top: 1.875rem;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+
+        width: 3.75rem;
+        height: 3.125rem;
+    }
+
+    &__review {
+        font-weight: 300;
+        line-height: 1.25;
+        font-size: 1.125rem;
+    }
+
+    &__name {
+        font-weight: 700;
+        margin-top: 1.875rem;
+        font-size: 1rem;
+    }
+
+    &__job {
+        color: $colorGrayishBlue;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 62rem) {
+    #content {
+        flex-direction: row-reverse;
+        padding: 2.8125rem;
+        background-size: 40%;
+    }
+
+    .profile-picture-container {
+        width: 37.5rem;
+        height: 35.625rem;
+        position: absolute;
+        right: 4.6875rem;
+
+        .profile-picture {
+            width: 80%;
+            height: 83%;
+        }
+
+        .button {
+            position: absolute;
+            bottom: 5%;
+            left: 20%;
+            transform: translate(0, 0);
+            width: 5.625rem;
+            height: 2.8125rem;
+            border-radius: 1.875rem;
+
+            &__prev {
+                @include prev-next-button;
+                width: 3.125rem;
+            }
+
+            &__next {
+                @include prev-next-button;
+                width: 3.125rem;
+            }
+        }
+    }
+
+    .text {
+        position: absolute;
+        left: 10.625rem;
+        padding: 0 0;
+        display: grid;
+        grid-template-columns: 0.45fr 1.55fr;
+        grid-template-rows: 1.9fr 0.1fr;
+        gap: 3.4375rem 0.3125rem;
+        grid-template-areas:
+            'review review'
+            'name job';
+
+        text-align: left;
+        max-width: 39.375rem;
+        margin-top: 0;
+
+        &__bg {
+            top: -37.5%;
+            left: 15%;
+            width: 7.5rem;
+            height: 6.875rem;
+        }
+
+        &__review {
+            grid-area: review;
+            font-size: 2rem;
+        }
+
+        &__name {
+            grid-area: name;
+            margin-top: 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        &__job {
+            grid-area: job;
+            justify-self: start;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (min-width: 90rem) {
+    #content {
+        flex-direction: row-reverse;
+        padding: 2.8125rem;
+        background-size: 40%;
+    }
+
+    .profile-picture-container {
+        width: 43.125rem;
+        height: 41.25rem;
+        position: absolute;
+        right: 4.6875rem;
+
+        .profile-picture {
+            width: 80%;
+            height: 83%;
+        }
+
+        .button {
+            position: absolute;
+            bottom: 4%;
+            left: 20%;
+            transform: translate(0, 0);
+            width: 6.875rem;
+            height: 3.4375rem;
+            border-radius: 1.875rem;
+
+            &__prev {
+                @include prev-next-button;
+                width: 3.4375rem;
+            }
+
+            &__next {
+                @include prev-next-button;
+                width: 3.4375rem;
+            }
+
+            .arrow {
+                width: 0.9375rem;
+                height: 1.25rem;
+            }
+        }
+    }
+
+    .text {
+        position: absolute;
+        left: 10.625rem;
+        padding: 0 0;
+        display: grid;
+        grid-template-columns: 0.45fr 1.55fr;
+        grid-template-rows: 1.9fr 0.1fr;
+        gap: 3.4375rem 0.3125rem;
+        grid-template-areas:
+            'review review'
+            'name job';
+
+        text-align: left;
+
+        margin-top: 0;
+
+        &__bg {
+            top: -32.5%;
+            left: 15%;
+            width: 7.5rem;
+            height: 6.875rem;
+        }
+
+        &__review {
+            grid-area: review;
+        }
+
+        &__name {
+            grid-area: name;
+        }
+
+        &__job {
+            grid-area: job;
+        }
+    }
+}
